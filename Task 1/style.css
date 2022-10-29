@@ -3,8 +3,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  background-color: #f7f7f7;
+  margin: 65.9px;
+  border-radius: 6px;
+}
+
+input {
+  border-radius: 6px;
 }
 
 /* Mobile first */
@@ -27,6 +38,7 @@ form {
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 6px;
 }
 
 #search {
