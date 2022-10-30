@@ -11,8 +11,10 @@ const audi = {
   color: "white",
 };
 
-console.log(audi);
-
 const showObjectKeys = () => {
-  audi.array.forEach((element) => {});
+  const keys = Object.keys(audi);
+
+  return keys;
 };
+
+console.log(showObjectKeys());

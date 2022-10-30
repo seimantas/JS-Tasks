@@ -13,21 +13,29 @@ class Movie {
   title;
   director;
   budget;
+
   constructor(title, director, budget) {
     this.title = title;
     this.director = director;
     this.budget = budget;
   }
-
-  wasExpensive(budget) {
-    if (budget > 100_000_000) {
-      console.log(true);
-    } else console.log(false);
+  wasExpensive() {
+    if (this.budget > 100_000_000) {
+      return console.log(true);
+    } else {
+      return console.log(false);
+    }
   }
 }
 
-const theMovie = new Movie("Brave Jack", "Eimas Sipas", 200_000_000);
+const goodMove = new Movie("Best Years", "Eimantas Sipas", 200_000_000);
 
-console.log(theMovie);
+console.log(goodMove);
 
-theMovie.wasExpensive();
+console.log(goodMove.wasExpensive());
+
+const badMove = new Movie("The Worst Years", "Bernard McSmith", 100_000);
+
+console.log(badMove);
+
+console.log(badMove.wasExpensive());
